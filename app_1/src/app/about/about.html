@@ -1,6 +1,35 @@
 <h1>About Us</h1>
-<div>
-    <p>
-        hello from about us page
+<div class="container py-5">
+<!--interpolation-->
+    <p>   hello from about us page {{string_1}}</p>
+    <h1> my age: {{age}}</h1>
+    <img [src]="imgSource" >
+    <p [class]="active ==true ? 'bg-info' : 'bg-danger'">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
     </p>
+    <button class="btn btn-primary" (click)="sayHello()">Hello</button>
+<div class="mb-3">
+  <label 
+  for="exampleFormControlInput1"
+   class="form-label">Email address</label>
+  <input 
+    type="email"
+    class="form-control"
+    id="exampleFormControlInput1"
+    placeholder="name@example.com"
+    (keyup)="printInConsole($event)"
+    />
 </div>
+
+<!-- binding
+1. one way to binding ts=>html
+2. two way to binding   ts->html=>ts
+
+one way binding
+1. interpolation
+2. property bindin 
+3. event binding
+
+ternary operator        
+condition ? true : false
+-->
