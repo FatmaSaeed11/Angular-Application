@@ -21,7 +21,20 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Link</a>
         </li>
-
+        <li>
+          <span class="text-white">{{ searchTearm() }}</span>
+        </li>
+        <li>
+          <div class="mb-3">
+             <input
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="name@example.com"
+              [ngModel]="searchTearm()"
+              />
+          </div>
+        </li>
       </ul>
     </div>
   </div>
