@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
 })
 export class Blog {
   friends:string[]=['ahmed','mohamed','sayed'];
-  isActive:boolean=true;
+  isActive:boolean=false;
   ay:number=2;
   str:string='angular';
 
